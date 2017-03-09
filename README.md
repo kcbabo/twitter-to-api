@@ -1,4 +1,4 @@
-Basic example demonstrating Twitter to Salesforce with data mapping in between.
+Basic example demonstrating Twitter to REST API with data mapping in between.
 
 NOTE: This git repo ignores application.properties because that's where I have all my login info.  You will want to create your own with the following settings:
 

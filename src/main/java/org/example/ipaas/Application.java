@@ -54,8 +54,8 @@ public class Application extends RouteBuilder {
         		"&consumerSecret={{twitter.consumer.secret}}" + 
         		"&accessToken={{twitter.access.token}}" + 
         		"&accessTokenSecret={{twitter.access.token.secret}}")
-        	.filter(simple("${body.text} contains 'rocker'"))
-        	.log("${body.text}")
+        	.filter(simple("${body.text} contains '#stockrocker'"))
+        	.log("Received Trade Tweet : ${body.text}")
         	.to("bean:mapTweet")
         	.marshal().json(JsonLibrary.Jackson, true)
         	.setHeader("CamelHttpMethod", constant("POST"))

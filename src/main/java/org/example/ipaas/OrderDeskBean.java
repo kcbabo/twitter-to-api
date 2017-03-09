@@ -4,7 +4,7 @@ public class OrderDeskBean implements OrderDesk {
 
 	@Override
 	public void placeTrade(Trade trade) {
-		System.out.println("[Order Desk] placing trade order ...\n " + trade);
+		System.out.println("\n[Order Desk] placing trade order ...\n " + trade);
 	}
 
 	@Override
